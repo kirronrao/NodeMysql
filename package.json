@@ -1,0 +1,27 @@
+{
+  "name": "nodemysql",
+  "version": "1.0.0",
+  "description": "demo project of node + mysql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirronrao/NodeMysql.git"
+  },
+  "keywords": [
+    "node",
+    "mysql"
+  ],
+  "author": "kiran bhujbal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kirronrao/NodeMysql/issues"
+  },
+  "homepage": "https://github.com/kirronrao/NodeMysql#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
