@@ -1,1 +1,0 @@
-var mysql = require('../config/conn.js'); 
