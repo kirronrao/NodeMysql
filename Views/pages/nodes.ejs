@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-sm-12 col-lg-12">
                 <h1 class="h1">
-                    Dashbord > Profile </h1>
+                    Dashbord > Nodes </h1>
             </div>
         </div>
     </div>
@@ -30,23 +30,35 @@
                 <div class="row">
                     <div class="col-md-12">
 
- <div class="form-group">
-                            <label for="name">
-                                 First Name : </label>
-                              <%=userdata.first_name %>
-                        </div>
- <div class="form-group">
-                            <label for="name">
-                                 Last Name : </label>
-                               <%=userdata.last_name %>
-                        </div>
+                        <div class="container">
+
+  <p>The connected ITD nodes in the network</p>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>IP</th>
+        <th>Port</th>      
+        <th>Status</th>
+          <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+     <% nodes.forEach(function(el,index){ %>
+      <tr>
+        <td><%=el.name %></td>
+        <td><%=el.ip %></td>
+        <td><%=el.port %></td>        
+        <td><%=el.status %></td>
+        <td><a href="nodes/<%=el.id %>" > View</a></td>
+      </tr>
+    <% }) %>
+    </tbody>
+  </table>
+</div>
 
 
-                        <div class="form-group">
-                            <label for="name">
-                                 Username : </label>
-                               <%=userdata.email %>
-                        </div>
+         
                        
 
                        

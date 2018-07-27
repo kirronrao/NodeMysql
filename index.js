@@ -22,12 +22,13 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 
 
 var UserRoutes = require('./Routes/UserRoutes');
-
+var NodesRoutes = require('./Routes/Nodes');
 //to get the form data in json format
 app.use(bodyParser.json({limit: '10mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 
 app.use('/', UserRoutes);
+app.use('/nodes', NodesRoutes);
 
 var server = app.listen(8081, function () {
    var host = server.address().address

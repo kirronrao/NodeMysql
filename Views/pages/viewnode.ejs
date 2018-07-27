@@ -1,5 +1,3 @@
-<!-- views/pages/about.ejs -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +15,7 @@
         <div class="row">
             <div class="col-sm-12 col-lg-12">
                 <h1 class="h1">
-                    Dashbord > Profile </h1>
+                    Dashbord > Nodes >Node Details </h1>
             </div>
         </div>
     </div>
@@ -32,24 +30,34 @@
 
  <div class="form-group">
                             <label for="name">
-                                 First Name : </label>
-                              <%=userdata.first_name %>
+                                 Name : </label>
+                              <%=node.name %>
                         </div>
  <div class="form-group">
                             <label for="name">
-                                 Last Name : </label>
-                               <%=userdata.last_name %>
+                                 IP : </label>
+                              <%=node.ip %>
                         </div>
 
 
                         <div class="form-group">
                             <label for="name">
                                  Username : </label>
-                               <%=userdata.email %>
+                              <%=node.username %>
                         </div>
                        
-
+                         <div class="form-group">
+                            <label for="name">
+                                 Password : </label>
+                              <%=node.password %>
+                        </div>
                        
+                        <div class="form-group">
+                            <label for="name">
+                                 Status : </label>
+                              <%=node.status %>
+                        </div>
+
                     </div>
                    
                 </div>
